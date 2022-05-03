@@ -4,8 +4,18 @@ font-family: 'Shrikhand', cursive;
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
 }
-
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black; 
+}
 /*Header*/
 header{
     background-color: #ffffff;
@@ -52,7 +62,7 @@ header{
 }
                                 /*voir style bouton*/
 
-/*section Fonctionnement*/
+/*Section Fonctionnement*/
 .liste_fonctionnement{
     display: flex;
     flex-direction: column;
@@ -66,5 +76,64 @@ header{
     margin: 5px 10px 5px 10px;
 }
 
+h1{ /*fonctionnement et restaurant - titre*/
+    margin-left: 5%;
+}
 
-
+/*Section Restaurants*/
+.section_restaurant{
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 1000px;
+}
+.liste_restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+}
+.liste_restaurants a{
+    width: 85%;
+}
+.carte_restaurant{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.image_restaurant img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 140px;
+    object-fit: cover;
+    margin: auto;
+    width: 100%;
+}
+.nouveau{
+    position: absolute;
+    right: 15%;
+    background-color: #99E2D0;
+}
+.info_restaurant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info h2{
+    margin: 10px 0px 0px 10px;
+    font-size: 90%;
+}
+.info p{
+    margin: 0px 0px 0px 10px;
+    font-size: 75%;
+    font-weight: lighter;
+}
+.coeur{
+    margin-right: 5%;
+}
