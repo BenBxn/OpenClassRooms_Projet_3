@@ -1,0 +1,70 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+*/
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+header{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px; /*voir pour faire passer dessus localistaion*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 30px;
+    margin: 20px auto 20px auto;
+}
+
+/*Main*/
+/*localisation*/
+.localiser{
+    display: flex;
+    justify-content: center;
+    background-color:#EAEAEA ;
+    align-items: center;
+}
+.localiser i{
+    margin: 15px 15px 15px 15px;
+}
+.localiser h3{
+    font-size: 90%;
+}
+
+/*Section Explorer*/
+.explorer{
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;
+    height: 270px;
+    text-align: center;
+}
+.explorer h1{
+    margin: 15px 15px 0px 15px;
+}
+.explorer p{
+    margin: 0px 15px 0px 15px;
+}
+                                /*voir style bouton*/
+
+/*section Fonctionnement*/
+.liste_fonctionnement{
+    display: flex;
+    flex-direction: column;
+}
+.fonctionnement{
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-radius: 20px ;
+    box-shadow: 0px 0px 5px 0px; /*a revoir*/
+    margin: 5px 10px 5px 10px;
+}
+
+
+
