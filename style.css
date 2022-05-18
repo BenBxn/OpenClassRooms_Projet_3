@@ -1,0 +1,328 @@
+/*variables*/
+/*general*/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Header*/
+header {
+  position: relative;
+  /*au dessus de */
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px;
+  /*voir pour faire passer dessus localistaion*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .logo {
+  height: 30px;
+  margin: 20px auto 20px auto;
+}
+
+.localiser {
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  align-items: center;
+}
+.localiser i {
+  margin: 15px 15px 15px 15px;
+}
+.localiser h3 {
+  font-size: 90%;
+}
+
+/*Section Explorer*/
+.explorer {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 270px;
+  text-align: center;
+}
+.explorer h1 {
+  margin: 15px 15px 0px 15px;
+}
+.explorer p {
+  margin: 0px 15px 0px 15px;
+}
+.explorer .btn-explorer {
+  opacity: 1;
+  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  color: white;
+  padding: 0 20px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.explorer .btn-explorer:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*titre section*/
+h1 {
+  margin-left: 10px;
+}
+
+/*Section Fonctionnement*/
+.liste_fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.liste_fonctionnement .fonctionnement {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  margin: 5px 10px 10px 10px;
+  height: 60px;
+  width: auto;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.liste_fonctionnement .fonctionnement:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #f2eafb;
+  /*revoir coouleur*/
+}
+.liste_fonctionnement .fonctionnement .numero {
+  background-color: #9356DC;
+  font-size: 70%;
+  color: white;
+  position: absolute;
+  padding: 5px 8px 5px 8px;
+  border-radius: 100%;
+  transform: translateX(-50%);
+  /*decaler le numero*/
+}
+
+.block_fonctionnement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.block_fonctionnement i {
+  color: #7E7E7E;
+  /*&:hover{
+      /*voir couleur icon quand survol
+  }*/
+}
+.block_fonctionnement h3 {
+  margin-left: 30px;
+  font-size: 90%;
+}
+
+/*Section Restaurants*/
+.section_restaurant {
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 1000px;
+}
+
+.liste_restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
+}
+.liste_restaurants a {
+  width: 90%;
+  max-width: 350px;
+}
+.liste_restaurants a .carte_restaurant {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  position: relative;
+  /*"nouveau"*/
+}
+.liste_restaurants a .carte_restaurant:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
+}
+
+.image_restaurant img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 140px;
+  object-fit: cover;
+  margin: auto;
+  width: 100%;
+}
+
+.nouveau {
+  position: absolute;
+  /* "nouveau" au dessus et dedans*/
+  right: 15px;
+  background-color: #99E2D0;
+}
+
+.info_restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_restaurant .info {
+  display: flex;
+  flex-direction: column;
+}
+.info_restaurant .info h2 {
+  margin: 10px 0px 0px 10px;
+  font-size: 90%;
+}
+.info_restaurant .info p {
+  margin: 0px 0px 0px 10px;
+  font-size: 75%;
+  font-weight: lighter;
+}
+.info_restaurant .coeur {
+  margin-right: 5%;
+  /*voir animation coeur*/
+}
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  height: 140px;
+}
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  color: #ffffff;
+  font-size: 80%;
+  margin: 15px 0px 5px 15px;
+}
+footer .bloc_lien_footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+footer .bloc_lien_footer a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 75%;
+  margin: 0px 0px 5px 0px;
+}
+footer .bloc_lien_footer a i {
+  font-size: 10px;
+  width: 10px;
+}
+footer .bloc_lien_footer a p {
+  margin: 0px 0px 0px 0px;
+}
+
+.p_footer {
+  padding-left: 5px;
+}
+
+/*PAGES MENUS*/
+.header_menu {
+  position: relative;
+  /*au dessus de */
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px;
+  /*voir pour faire passer dessus localistaion*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_menu .logo_menu {
+  height: 30px;
+  margin: 20px 20px 20px 20px;
+}
+.header_menu a {
+  position: absolute;
+  /*pour garder logo au milieu*/
+  left: 35px;
+}
+
+.page_menu {
+  width: 100%;
+}
+.page_menu .img_menu {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  /* voir pour menu audessus*/
+}
+
+.menu {
+  margin-top: -50px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+.menu .titre_menu {
+  border-radius: 30px 30px 0 0;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .titre_menu h2 {
+  font-family: "Shrikhand", cursive;
+  margin-left: 15px;
+}
+.menu .titre_menu i {
+  margin-right: 30px;
+}
+.menu .bloc_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #F6F6F6;
+}
+.menu .bloc_menu h3 {
+  margin-left: 15px;
+  font-weight: 300;
+  background: #99e2d0;
+  width: 45px;
+  height: 3px;
+  /*mettre trait en dessous*/
+}
+.menu .bloc_menu .choix_menu {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .bloc_menu .choix_menu .info_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
