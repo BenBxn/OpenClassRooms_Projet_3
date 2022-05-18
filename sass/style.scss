@@ -8,16 +8,12 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
 }
-/*
 * {
-    box-sizing: border-box;
+        box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
-*/
 a {
     text-decoration: none;
     color: black; 
@@ -27,7 +23,7 @@ a {
 header{
     position: relative; /*au dessus de */
     background-color: #ffffff;
-    box-shadow: 0px 0px 5px 0px; /*voir pour faire passer dessus localistaion*/
+    box-shadow: 0px 0px 5px 0px; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -65,23 +61,27 @@ header{
         margin: 0px 15px 0px 15px;
     }
     .btn-explorer{
-        opacity: 1;
+        height: 50px;
+        width: 250px;
+        border: none;
+        cursor: pointer;
         background: $gradient;
         color: white;
-        padding: 0 20px;
-        border-radius: 200px;
+        border-radius: 50px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
         &:hover{
-            opacity: 0.8;
-            cursor: pointer;
-            transition: .3s;
+            background: lighten($color-secondary, 2%);
+            box-shadow: 4px 6px 10px #000000;
+            transition: 0,3s;
         }
     }
 }
 
+
 /*titre section*/
 h1 {
     margin-left: 10px;
+    padding-top: 20px;
 }
 
 /*Section Fonctionnement*/
@@ -99,12 +99,16 @@ h1 {
         height: 60px;
         width: auto;
         position: relative;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
         &:hover {
             opacity: 0.8;
             cursor: pointer;
             transition: .3s;
-            background: lighten(#9356DC, 35%); /*revoir coouleur*/
+            box-shadow: 4px 6px 10px #000000;
+            background: lighten(#9356DC, 35%); 
+            i{
+                color: $color-primary;
+            }
         }
         .numero{
             background-color: $color-primary;
@@ -113,7 +117,7 @@ h1 {
             position: absolute;
             padding: 5px 8px 5px 8px;
             border-radius: 100%;
-            transform: translateX(-50%); /*decaler le numero*/
+            transform: translateX(-50%); /* pour decaler le numero*/
         }
     }
 }
@@ -124,9 +128,6 @@ h1 {
         margin-left: 40px;
         i{
             color: #7E7E7E;
-            /*&:hover{
-                /*voir couleur icon quand survol
-            }*/
         }
         h3{
             margin-left: 30px;
@@ -157,10 +158,11 @@ h1 {
             flex-direction: column;
             height: 200px;
             position: relative; /*"nouveau"*/
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
             &:hover {
                 transition: .5s;
                 transform: scale(1.02);
-                box-shadow: 0px 0px 10px 2px rgba(147, 86, 220,0.6);
+                
             }
         }
     }
@@ -178,6 +180,9 @@ h1 {
     position: absolute; /* "nouveau" au dessus et dedans*/
     right: 15px;
     background-color: #99E2D0;
+    color: green;
+    font-size: 70%;
+    padding: 5px 8px 5px 8px;
 }
 .info_restaurant{
     display: flex;
@@ -197,10 +202,13 @@ h1 {
         }
     }
     .coeur{
-        margin-right: 5%; /*voir animation coeur*/
+        margin-right: 5%; 
+        &:hover{
+        color: $color-primary;
+        transition: opacity 800ms;  /*revoir animation*/
+        }
     }
 }
-
 /*footer*/
 footer{
     display: flex;
@@ -285,6 +293,10 @@ footer{
         }
         i{
             margin-right: 30px;
+            &:hover{
+                color: $color-primary;
+                transition: opacity 800ms;  /*revoir animation*/
+                }
         }
     }
     .bloc_menu{
@@ -292,22 +304,40 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         background-color: #F6F6F6;
+        margin: auto 10px auto 10px;
         h3{
             margin-left: 15px;
             font-weight: 300;
-            background: #99e2d0;
-            width: 45px;
-            height: 3px; /*mettre trait en dessous*/
+            border-bottom: 2px solid $color-tertiary/*mettre trait en plus petit?*/
         }
         .choix_menu{
             background-color: #ffffff;
             border-radius: 15px;
-            box-shadow:0px 2px 2px 2px;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
             display: flex;
             justify-content: space-between;
+            height: 80px;
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+            margin-bottom: 20px;
             .info_menu{
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 10px;
+                min-height: 100%;
+                width: 85%;
+                overflow: hidden;
+                h4 {
+                    margin: 5px 0 5px 0;
+                    transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+                }
+                p {
+                    margin: 0;
+                    transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+                }
             }            
         }
     }
