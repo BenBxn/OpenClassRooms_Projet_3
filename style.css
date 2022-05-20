@@ -12,8 +12,8 @@ body {
 
 * {
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  /*-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;*/
 }
 
 a {
@@ -133,18 +133,17 @@ main {
 .explorer .btn-explorer:hover {
   background: #ff83dd;
   box-shadow: 4px 6px 10px #000000;
-  transition: 0, 3s;
-}
-
-/*titre section*/
-h1 {
-  margin-left: 10px;
-  padding-top: 20px;
+  transition: 0.3s;
 }
 
 /*Section Fonctionnement*/
 .section_fonctionnement {
   margin-bottom: 20px;
+}
+
+.section_titre {
+  margin-left: 10px;
+  padding-top: 20px;
 }
 
 .liste_fonctionnement {
@@ -277,11 +276,12 @@ h1 {
   bottom: 20px;
 }
 .info_restaurant .coeur .fa-solid {
-  /*pour gradient*/
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  /*pour gradient mais avertissement css sur w3c*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent;*/
+  color: #FF79DA;
   /*animation coeur*/
   z-index: 1;
   opacity: 0;
@@ -352,9 +352,10 @@ h1 {
   justify-content: space-around;
   width: 100%;
 }
-.menu .titre_menu h2 {
+.menu .titre_menu h3 {
   font-family: "Shrikhand", cursive;
   margin-left: -40px;
+  font-size: 150%;
 }
 .menu .titre_menu .coeur_menu {
   padding-bottom: 20px;
@@ -371,11 +372,12 @@ h1 {
   z-index: 1;
   opacity: 0;
   transition: opacity 1s;
-  /*pour gradient*/
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  /*pour gradient mais avertissement css sur w3c*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent;*/
+  color: #FF79DA;
 }
 .menu .titre_menu .coeur_menu .fa-solid:hover {
   opacity: 1;
@@ -547,7 +549,7 @@ h1 {
 .menu .btn-commander:hover {
   background: #ff83dd;
   box-shadow: 4px 6px 10px #000000;
-  transition: 0, 3s;
+  transition: 0.5s;
 }
 
 /*footer*/
