@@ -215,10 +215,27 @@ h1 {
         }
     }
     .coeur{
-        margin-right: 5%; 
-        &:hover{
-        color: $color-primary;
-        transition: opacity 800ms;  /*revoir animation*/
+        i{
+        font-size: 25px;
+        transition: 0.25s ease-in-out;
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+            
+        }
+        .fa-solid {
+            /*pour gradient*/
+            background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            /*animation coeur*/
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 1s;
+            &:hover {
+                opacity: 1;
+            } 
         }
     }
 }
@@ -227,7 +244,7 @@ h1 {
 .header_menu{
     position: relative; /*au dessus de */
     background-color: #ffffff;
-    box-shadow: 0px 0px 5px 0px; /*voir pour faire passer dessus localistaion*/
+    box-shadow: 0px 0px 5px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -281,12 +298,28 @@ h1 {
             font-family: "Shrikhand", cursive;
             margin-left: -40px;
         }
-        i{
-            margin-right: -30px;
-            &:hover{
-                color: $color-primary;
-                transition: opacity 800ms;  /*revoir animation*/
-                }
+        .coeur_menu{
+            padding-bottom: 20px;
+            i{
+                font-size: 25px ;
+                position: absolute;
+                margin-right: -30px;
+                transition: 0.25s ease-in-out; /*animation*/
+            }
+            .fa-solid {
+                color: $color-primary; 
+                z-index: 1;
+                opacity: 0;
+                transition: opacity 1s;
+                            /*pour gradient*/
+            background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+                &:hover {
+                    opacity: 1;
+                } 
+            }
         }
     }
     .bloc_menu{
@@ -401,6 +434,7 @@ h1 {
         }
     }
 
+
     /*animation apparition*/
 @keyframes opacity {
     0% {
@@ -445,9 +479,7 @@ h1 {
 #choix_9 {
     animation-delay: 1.2s;
 }
-
-
-
+    /*********/
 
 
     .btn-commander{
