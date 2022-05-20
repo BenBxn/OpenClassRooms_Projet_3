@@ -49,17 +49,18 @@ a {
                 padding: 10px 30px 10px 30px;
                 border-radius: 100%;
                 margin-top: -70px;
-                margin-right: 10px;
                 animation: opacity 1s both;
             }
             #spinner1{
                 animation-delay: 1s;
+                margin-left: 15px;
             }
             #spinner2{
                 animation-delay: 1.5s;
             }
             #spinner3{
                 animation-delay: 2s;
+                margin-right: 25px;
             }
         }
     }
@@ -532,6 +533,9 @@ h1 {
 
 #choix_9 {
     animation-delay: 1.2s;
+}
+#choix_10{
+    animation-delay: 1.3s;
 }
     /*********/
 
