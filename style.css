@@ -51,17 +51,18 @@ a {
   padding: 10px 30px 10px 30px;
   border-radius: 100%;
   margin-top: -70px;
-  margin-right: 10px;
   animation: opacity 1s both;
 }
 .loading_spinner .bloc_spinner .numero_spinner #spinner1 {
   animation-delay: 1s;
+  margin-left: 15px;
 }
 .loading_spinner .bloc_spinner .numero_spinner #spinner2 {
   animation-delay: 1.5s;
 }
 .loading_spinner .bloc_spinner .numero_spinner #spinner3 {
   animation-delay: 2s;
+  margin-right: 25px;
 }
 
 @keyframes en-bas {
@@ -527,6 +528,9 @@ h1 {
 }
 .menu #choix_9 {
   animation-delay: 1.2s;
+}
+.menu #choix_10 {
+  animation-delay: 1.3s;
 }
 .menu .btn-commander {
   align-self: center;
