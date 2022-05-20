@@ -4,7 +4,7 @@
         <title>La note enchantée</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <!--Polices & icons-->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -14,16 +14,188 @@
     </head>
     <body>
         <!--Header-->
-        <header class="page_menu">
+        <header class="header_menu">
             <a href="index.html">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <img src="images/logo/ohmyfood.png" alt="logo OhMyFood">
+            <img class="logo_menu" src="images/logo/ohmyfood.png" alt="logo OhMyFood">
         </header>
 
         <!--Main-->
-        <main>
+        <main class="main_menu">
+            <article class="page_menu">
+                <img class="img_menu" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo à la française">
+                <section class="menu">
+                    <!--Titre-->
+                    <div class="titre_menu">
+                        <h2>La note enchantée</h2>
+                        <div class="coeur_menu">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <!--ENTREE-->
+                    <div class="bloc_menu">
+                        <h3>ENTRÉES</h3>
+                        <div class="bloc_choix">
+                            <!-- choix 1-->
+                            <div class="choix_menu" id="choix_1">
+                                <div class="info_menu">
+                                    <h4>Ravioles de foie gras </h4>
+                                    <p>Accompagnés de leur crème à la truffe</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>25€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
 
+                            <!-- choix 2-->
+                            <div class="choix_menu" id="choix_2">
+                                <div class="info_menu">
+                                    <h4>Caviar osciètre</h4>
+                                    <p>Sur blini à la farine de blé noir</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>35€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <!-- choix 3-->
+                            <div class="choix_menu" id="choix_3">
+                                <div class="info_menu">
+                                    <h4>Homard et espuma de potiron</h4>
+                                    <p>Mariné aux zestes d'orange</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>20€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <!-- choix 4-->
+                            <div class="choix_menu" id="choix_4">
+                                <div class="info_menu">
+                                    <h4>Foie gras de canard cuit entier</h4>
+                                    <p>Confiture de figue et pain toasté</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>35€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--PLATS-->
+                    <div class="bloc_menu">
+                        <h3>PLATS</h3>
+                        <div class="bloc_choix">
+                            <!-- choix 5-->
+                            <div class="choix_menu" id="choix_5">
+                                <div class="info_menu">
+                                    <h4>Noix de coquilles Saint-Jacques</h4>
+                                    <p>Sur lit de purée de céleri-rave</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>40€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <!-- choix 6-->
+                            <div class="choix_menu" id="choix_6">
+                                <div class="info_menu">
+                                    <h4>Langoustine poêlée</h4>
+                                    <p>Purée de patate douce</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>35€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <!-- choix 7-->
+                            <div class="choix_menu" id="choix_7">
+                                <div class="info_menu">
+                                    <h4>Mijoté de queue de boeuf</h4>
+                                    <p>Et riz sauvage aux zestes de citron</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>44€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--DESSERTS-->
+                    <div class="bloc_menu">
+                        <h3>DESSERTS</h3>
+                        <div class="bloc_choix">
+                            <!-- choix 8-->
+                            <div class="choix_menu" id="choix_8">
+                                <div class="info_menu">
+                                    <h4>Macaron noisette et chocolat</h4>
+                                    <p>Glace au caramel brun et sel de Guérande</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>18€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <!-- choix 9-->
+                            <div class="choix_menu" id="choix_9">
+                                <div class="info_menu">
+                                    <h4>Baba au rhum revisité</h4>
+                                    <p>Avec son coulis de citron</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>22€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <!-- choix 10-->
+                            <div class="choix_menu" id="choix_10">
+                                <div class="info_menu">
+                                    <h4>Tarte au citron meringuée</h4>
+                                    <p>Déstructurée</p>
+                                </div>
+                                <div class="prix_menu">
+                                    <p><strong>23€</strong></p>
+                                </div>
+                                <div class="menu_valide">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-action btn-commander">Commander</button>
+
+                </section>
+            </article>
         </main>
 
         <!--Footer-->
