@@ -22,6 +22,57 @@ a {
     text-decoration: none;
     color: black; 
 }
+/*Loading spinner*/
+.loading_spinner{
+    position: fixed;
+    inset: 0; /*en arrivant sur la page*/
+    z-index: 2; /*au dessus de tous*/
+    background-image: $gradient;
+    animation: en-bas 1000ms 3000ms forwards ease-in;
+    .bloc_spinner{
+        .logo_spinner{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 300px;
+            i{
+                font-size: 50px;
+                color: $color-tertiary;
+            }
+        }
+        .numero_spinner{            
+            display: flex;
+            justify-content: space-evenly;
+            p{
+                background-color: $color-primary;
+                font-size: 70px;
+                color: white;
+                padding: 10px 30px 10px 30px;
+                border-radius: 100%;
+                margin-top: -70px;
+                margin-right: 10px;
+                animation: opacity 1s both;
+            }
+            #spinner1{
+                animation-delay: 1s;
+            }
+            #spinner2{
+                animation-delay: 1.5s;
+            }
+            #spinner3{
+                animation-delay: 2s;
+            }
+        }
+    }
+}
+
+@keyframes en-bas{
+    100% {
+    transform: translateY(5000px);
+    opacity: 0;
+    }
+}
+
+
 
 /*Header*/
 header{
@@ -367,20 +418,18 @@ h1 {
                 padding-left: 10px;
                 min-height: 100%;
                 width: 85%;
-                /*overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;*/
+                
                 h4 {
                     margin: 5px 0 5px 0;
-                    /*white-space: nowrap;
-                    overflow: hidden;
+                    /* white-space: nowrap;
+                    text-overflow: "…";
                     text-overflow: ellipsis; */
                 }
                 p {
                     margin: 0;
-                    /*hite-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis; */
+                    /*white-space: nowrap;
+                    text-overflow: "…";
+                    text-overflow: ellipsis;*/ 
                 }
             }
             .prix_menu{
@@ -408,14 +457,19 @@ h1 {
                 cursor: pointer;                
                 .info_menu{
                     overflow: hidden;
+                    
                     /*h4 {
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis; 
-                    }
-                    p {
+
+                        text-overflow: "…";
+                        text-overflow: ellipsis;
+                    }*/
+                    /*p {
                         white-space: nowrap;
                         overflow: hidden;
+
+                        text-overflow: "…";
                         text-overflow: ellipsis;
                     }*/
                 }
