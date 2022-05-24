@@ -305,7 +305,7 @@ main{
         margin: 20px 20px 20px 20px;
     }
     a{
-        position: absolute; /*pour garder logo au milieu*/
+        position: absolute; 
         left: 35px;
     }
 }
@@ -367,7 +367,7 @@ main{
                 /*background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
                 background-clip: text;
                 -webkit-background-clip: text;
-                color: transparent;*/
+                color: transparent;*/ /*sinon couleur uni*/
                 color: $color-secondary;
                 &:hover {
                     opacity: 1;
@@ -423,15 +423,17 @@ main{
                 
                 h4 {
                     margin: 5px 0 5px 0;
-                    /* white-space: nowrap;
-                    text-overflow: "…";
-                    text-overflow: ellipsis; */
+                    width: 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
                 p {
                     margin: 0;
-                    /*white-space: nowrap;
-                    text-overflow: "…";
-                    text-overflow: ellipsis;*/ 
+                    width: 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden; 
                 }
             }
             .prix_menu{
@@ -453,27 +455,12 @@ main{
                     transition: transform 1000ms;
                     margin-top: 30px;
                 }
-            }/*animation slide*/ /*voir pour text si coupé comment faire ...*/
+            }/*animation slide*/ 
             &:hover{
                 box-shadow: 4px 6px 10px #000000;
                 cursor: pointer;                
                 .info_menu{
                     overflow: hidden;
-                    
-                    /*h4 {
-                        white-space: nowrap;
-                        overflow: hidden;
-
-                        text-overflow: "…";
-                        text-overflow: ellipsis;
-                    }*/
-                    /*p {
-                        white-space: nowrap;
-                        overflow: hidden;
-
-                        text-overflow: "…";
-                        text-overflow: ellipsis;
-                    }*/
                 }
                 .prix_menu{
                     margin-right: 100px;
