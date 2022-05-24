@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*variables*/
 /*general*/
 body {
@@ -308,7 +307,6 @@ main {
 }
 .header_menu a {
   position: absolute;
-  /*pour garder logo au milieu*/
   left: 35px;
 }
 
@@ -377,6 +375,7 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;*/
+  /*sinon couleur uni*/
   color: #FF79DA;
 }
 .menu .titre_menu .coeur_menu .fa-solid:hover {
@@ -422,7 +421,6 @@ main {
   animation: opacity 1s both;
   /*animation apparition*/
   /*animation slide*/
-  /*voir pour text si coupé comment faire ...*/
 }
 .menu .bloc_menu .choix_menu .info_menu {
   display: flex;
@@ -435,15 +433,17 @@ main {
 }
 .menu .bloc_menu .choix_menu .info_menu h4 {
   margin: 5px 0 5px 0;
-  /* white-space: nowrap;
-  text-overflow: "…";
-  text-overflow: ellipsis; */
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .bloc_menu .choix_menu .info_menu p {
   margin: 0;
-  /*white-space: nowrap;
-  text-overflow: "…";
-  text-overflow: ellipsis;*/
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .bloc_menu .choix_menu .prix_menu {
   align-self: flex-end;
@@ -471,20 +471,6 @@ main {
 }
 .menu .bloc_menu .choix_menu:hover .info_menu {
   overflow: hidden;
-  /*h4 {
-      white-space: nowrap;
-      overflow: hidden;
-
-      text-overflow: "…";
-      text-overflow: ellipsis;
-  }*/
-  /*p {
-      white-space: nowrap;
-      overflow: hidden;
-
-      text-overflow: "…";
-      text-overflow: ellipsis;
-  }*/
 }
 .menu .bloc_menu .choix_menu:hover .prix_menu {
   margin-right: 100px;
