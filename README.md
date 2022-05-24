@@ -1,5 +1,5 @@
 # Formation Développeur Web
-## Projet 3 - ohmyfood
+## Projet 3 - Ohmyfood!
 ------------
 https://benbxn.github.io/OpenClassRooms_Projet_3/
 
@@ -7,11 +7,13 @@ https://benbxn.github.io/OpenClassRooms_Projet_3/
 Ce projet est le n°3 du parcours [Développeur Web](https://openclassrooms.com/fr/paths/556-developpeur-web "Développeur  Web") qui consiste à dynamisez une page web avec des animations CSS.
 
 ### 🎬 Context
-
+Employé en tant que développeur junior chez Ohmyfood!, une jeune startup qui voudrait s'imposer sur le marché de la restauration. 
+L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. 
+En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.
 <p align="center">
-<img alt="Logo ohmyfood" width="200px" src="https://raw.githubusercontent.com/BenBxn/OpenClassRooms_Projet_3/main/images/logo/ohmyfood@2x.svg" />
+<img alt="Logo ohmyfood" width="200px" src="https://raw.githubusercontent.com/BenBxn/OpenClassRooms_Projet_3/main/images/logo/ohmyfoodcolor.png" />
 </p>
-
+La comerciale chargée de démarcher les restaurants a réussi à convaincre 4 responsables de déposer leur cartes en ligne. Un brief est etablie en équipe avec le CTO. l'UX nous envoie les maquettes du site par mail. 
 
 ### 📘 Cahiers des charges
 ##### Spécifications fonctionnelles 🌐
