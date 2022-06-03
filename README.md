@@ -13,7 +13,7 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 <p align="center">
 <img alt="Logo ohmyfood" width="200px" src="https://raw.githubusercontent.com/BenBxn/OpenClassRooms_Projet_3/main/images/logo/ohmyfoodcolor.png" />
 </p>
-La commerciale chargée de démarcher les restaurants a réussi à convaincre 4 responsables de déposer leur carte en ligne. Un brief est etabli en équipe avec le CTO. L'UX nous envoie les maquettes du site par mail. 
+La commerciale chargée de démarcher les restaurants a réussi à convaincre 4 responsables de déposer leur carte en ligne. Un brief est établi en équipe avec le CTO. L'UX nous envoie les maquettes du site par mail. 
 
 ### 📘 Cahier des charges
 ##### Spécifications fonctionnelles 🌐
@@ -46,5 +46,5 @@ La commerciale chargée de démarcher les restaurants a réussi à convaincre 4 
 
 ### 🔍 Informations complémentaires
 - Lien vers le site : https://benbxn.github.io/OpenClassRooms_Projet_3/ 🔗
-- Soutenance : (en cours)
+- Soutenance validée le 03/06/2022. ✅
 
